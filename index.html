@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's-Go - Transportation Service in Sri Lanka</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "McMCoDYfD1yWu7hzP",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Let's-Go Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Popular Destination</a></li>
+                    <li><a href="#how-to-book">How to Book a Tour</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.letsgo.transport"
+                            target="_blank">Download App</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="carousel">
+            <div class="carousel-slides">
+                <div class="carousel-slide fade">
+                    <!-- <img src="https://lakpura.com/cdn/shop/files/LK950P0000-01-E_f46b5a24-79fa-4390-8652-37d50014ea0c.jpg?v=1691496240&width=3840"
+                        alt="Sri Lanka Beach"> -->
+                    <img src="assets/ballon_tour.jpg" alt="Sri Lanka Beach">
+                </div>
+                <div class="carousel-slide fade">
+                    <!-- <img src="https://kalinatravelplatform.com/wp-content/uploads/2023/12/Sri-Lanka.jpg"
+                        alt="Colombo City"> -->
+                    <img src="assets/galle.png" alt="Sri Lanka Beach">
+                </div>
+                <div class="carousel-slide fade">
+                    <!-- <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/73/96/fd.jpg"
+                        alt="Tea Plantations"> -->
+                    <img src="assets/ella.png" alt="Sri Lanka Beach">
+                </div>
+                <div class="carousel-slide fade">
+                    <!-- <img src="https://www.pelago.com/img/products/LK-Sri%20Lanka/sigiriya-and-dambulla-day-tour-from-bentota/de28d4c1-ad48-4036-b83f-55fddfbc6c5d_sigiriya-and-dambulla-day-tour-from-bentota.jpg" -->
+                    alt="Sri Lanka Landscape">
+                    <img src="assets/sigiriya.png" alt="Sri Lanka Beach">
+                </div>
+                <div class="carousel-slide fade">
+                    <!-- <img src="https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/9732566d-6b33-4a1a-ba0c-1b73ed8848a4/The+Common+Wanderer-9888.jpg"
+                        alt="Tea Plantations"> -->
+                    <img src="assets/beach.jpg" alt="Sri Lanka Beach">
+                </div>
+                <div class="carousel-slide fade">
+                    <!-- <img src="https://aaryancars.com/wp-content/uploads/2022/08/HAB.jpg" alt="Tea Plantations"> -->
+                    <img src="assets/elephant.jpg" alt="Sri Lanka Beach">
+                </div>
+            </div>
+
+            <div class="carousel-overlay">
+                <div class="container">
+                    <h1>Welcome to Let's-Go</h1>
+                    <p>Your trusted travel partner for seamless transportation across Sri Lanka</p>
+                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#how-to-book" class="btn btn-secondary"
+                        style="margin-left: 16px; background: #087d00; color: #fff; border: 2px solid #11ff00;">How to
+                        Book a Tour</a>
+                </div>
+            </div>
+
+            <!-- Carousel pagination dots -->
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <!-- Carousel navigation arrows -->
+            <a class="carousel-prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="carousel-next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Explore Popular Destinations</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Safari Tour</h3>
+                    <img src="assets/safari.png" alt="Safari Tour" style="width: 75%; height: 55%;">
+                    <p
+                        style="font-size: small; margin-top: 20px; text-align: justify; margin-left: 60px; margin-right: 60px;">
+                        Experience Sri Lanka’s wildlife with guided transport to top national parks. Visit Yala National
+                        Park or Udawalawe National Park and enjoy jeep safaris to see elephants, leopards, and exotic
+                        birds. A great choice for nature and animal lovers.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Beach Tour</h3>
+                    <img src="assets/beach.png" alt="Beach Tour" style="width: 75%; height: 55%;">
+                    <p
+                        style="font-size: small; margin-top: 20px; text-align: justify; margin-left: 60px; margin-right: 60px;">
+                        Travel comfortably to Sri Lanka’s most beautiful beaches and enjoy a relaxing coastal getaway.
+                        Discover places like Mirissa and Unawatuna, perfect for swimming, surfing, and whale watching.
+                        Best for those looking to unwind by the ocean with convenient transport.</p>
+                </div>
+            </div>
+            <div class="service-grid" style="margin-top: 30px;">
+                <div class="service-item">
+                    <h3>City Tour</h3>
+                    <img src="assets/city.png" alt="City Tour" style="width: 75%; height: 55%;">
+                    <p
+                        style="font-size: small; margin-top: 20px; text-align: justify; margin-left: 60px; margin-right: 60px;">
+                        Explore Sri Lanka’s vibrant cities with smooth and reliable transport options. Visit popular
+                        destinations like Colombo and Kandy to enjoy shopping, local food, cultural landmarks, and city
+                        nightlife. Ideal for travelers who love urban experiences with easy access to key attractions.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3>Nature Tour</h3>
+                    <img src="assets/nature.png" alt="Nature Tour" style="width: 75%; height: 55%;">
+                    <p
+                        style="font-size: small; margin-top: 20px; text-align: justify; margin-left: 60px; margin-right: 60px;">
+                        Enjoy peaceful journeys to Sri Lanka’s scenic hill country and natural landscapes. Travel to
+                        destinations like Ella and Nuwara Eliya, known for waterfalls, tea plantations, and cool
+                        climate. Perfect for relaxing and refreshing trips.</p>
+                </div>
+            </div>
+            <div class="service-grid" style="margin-top: 30px;">
+                <div class="service-item">
+                    <h3>Adventure Tour</h3>
+                    <img src="assets/adventure.png" alt="Adventure Tour" style="width: 75%; height: 55%;">
+                    <p
+                        style="font-size: small; margin-top: 20px; text-align: justify; margin-left: 60px; margin-right: 60px;">
+                        Plan exciting trips to Sri Lanka’s top adventure locations with easy transport access. Visit
+                        Kitulgala for white-water rafting or Knuckles Mountain Range for hiking and trekking. Ideal for
+                        thrill-seekers and outdoor explorers.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Culture Tour</h3>
+                    <img src="assets/culture.png" alt="Culture Tour" style="width: 75%; height: 55%;">
+                    <p
+                        style="font-size: small; margin-top: 20px; text-align: justify; margin-left: 60px; margin-right: 60px;">
+                        Discover Sri Lanka’s rich heritage and spiritual sites with comfortable travel options. Visit
+                        iconic places like Temple of the Tooth and Anuradhapura to explore ancient history,
+                        architecture, and traditions. Perfect for cultural and religious experiences.</p>
+                </div>
+            </div>
+            <div class="service-grid" style="margin-top: 30px;">
+                <div class="service-item">
+                    <h3>Custom Tour</h3>
+                    <p
+                        style="font-size: small; margin-top: 20px; text-align: justify; margin-left: 60px; margin-right: 60px;">
+                        Plan your journey with confidence and precision. Select your preferred destinations, travel
+                        duration, and budget, and let Let's Go App craft a personalized itinerary designed for comfort,
+                        efficiency, and a seamless travel experience across Sri Lanka. Every detail is thoughtfully
+                        arranged to ensure a smooth and memorable journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Book a Tour Section -->
+    <section id="how-to-book" class="how-to-book">
+        <div class="container">
+            <h2><span
+                    style="vertical-align: middle; color: #087d00; font-size: 2.2rem; margin-right: 0.5rem;"></span>How
+                to Book a Tour with Let's-Go App</h2>
+            <p class="how-to-book-intro">
+                Booking your dream Sri Lankan adventure is easy and secure with the Let's-Go mobile app. Follow these
+                simple steps to reserve your next unforgettable journey!
+            </p>
+            <div class="booking-steps">
+                <div class="booking-step">
+                    <div class="step-icon" style="background: #11ff00; color: #222;">1</div>
+                    <div class="step-content">
+                        <h3><span style="font-size: 1.3rem; vertical-align: middle;">⬇</span> Download the App</h3>
+                        <p>Get the Let's-Go app from the <a
+                                href="https://play.google.com/store/apps/details?id=com.letsgo.transport"
+                                target="_blank">Google Play Store</a> and install it on your mobile device.</p>
+                    </div>
+                </div>
+                <div class="booking-step">
+                    <div class="step-icon" style="background: #11ff00; color: #222;">2</div>
+                    <div class="step-content">
+                        <h3><span style="font-size: 1.3rem; vertical-align: middle;"></span> Create Your Account</h3>
+                        <p>Sign up with your email or phone number. Fill in your profile details for a personalized
+                            experience.</p>
+                    </div>
+                </div>
+                <div class="booking-step">
+                    <div class="step-icon" style="background: #11ff00; color: #222;">3</div>
+                    <div class="step-content">
+                        <h3><span style="font-size: 1.3rem; vertical-align: middle;"></span> Choose Your Tour</h3>
+                        <p>Browse popular trips <strong>using the map</strong> or choose your pickup and drop-off
+                            location.<br><br>
+
+                            Example:-<br>
+                            <strong>Pickup location:</strong>Your current location<br>
+                            <strong>Drop location:</strong> Yala Safari
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="booking-steps">
+                <div class="booking-step">
+                    <div class="step-icon" style="background: #11ff00; color: #222;">4</div>
+                    <div class="step-content">
+                        <h3><span style="font-size: 1.3rem; vertical-align: middle;"></span> Enter Booking Details</h3>
+                        <ul class="sample-details">
+                            <li><strong>Other view points:</strong> Special note about tour</li>
+                            <li><strong>Number of Passengers: </strong>5</li>
+                            <li><strong>Start Time&Date:</strong> 2026-06-10 09:00</li>
+                            <li><strong>End Time&Date:</strong> 2026-06-10 17:00</li>
+                            <li><strong>Choose vehicle:</strong> Select vehicle type</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="booking-step">
+                    <div class="step-icon" style="background: #11ff00; color: #222;">5</div>
+                    <div class="step-content">
+                        <h3><span style="font-size: 1.3rem; vertical-align: middle;"></span>Request Booking</h3>
+                        <p>After filling in all the booking details, please click the request button. You will be
+                            notified once your trip is confirmed.
+                            <br><strong>Access real-time updates and manage all your travel requests in the Activities
+                                section</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="booking-step">
+                    <div class="step-icon" style="background: #11ff00; color: #222;">6</div>
+                    <div class="step-content">
+                        <h3><span style="font-size: 1.3rem; vertical-align: middle;"></span>Booked</h3>
+                        <p>Once your request is approved, your service will be confirmed.
+                            <br><br><strong> For your convenience and trust, no advance payment is required</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="text-align:center; margin-top:20px;">
+                <button class="btn2" onclick="openVideo()">View Steps</button>
+            </div>
+
+            <div id="videoModal" class="video-modal">
+                <div class="video-wrapper">
+
+                    <video width="600" controls>
+                        <source src="https://firebasestorage.googleapis.com/v0/b/let-s-go-48ab9.firebasestorage.app/o/Let's-Go.mp4?alt=media&token=2c5333df-c753-49b9-a975-77147c4c01be" type="video/mp4">
+                    </video>
+
+                    <button class="close-btn" onclick="closeVideo()">✖</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Let's-Go</h2>
+            <p>Let’s-Go Transport Service is a reliable and convenient transport booking app designed to make your
+                travel easy and stress-free.</p><br><br><br>
+            <p>With a user-friendly interface, Let's-Go allows you to quickly find and book transportation for your
+                trips across Sri Lanka. Whether you're planning a safari tour, beach getaway, city exploration, or
+                cultural adventure, Let's-Go has you covered with a wide range of transport options to suit your
+                needs.</p><br><br><br>
+
+            <div>
+                <div>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Easy and quick booking process</li>
+                        <li>Real-time tracking of your vehicle</li>
+                        <li>Secure Requests</li>
+                        <li>Direct contact on WhatsApp</li>
+                        <li>24/7 customer support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn2">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("McMCoDYfD1yWu7hzP"); // <-- replace
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            };
+
+            emailjs.send("service_htw7e4r", "template_nu3co7d", params)
+                .then(function (res) {
+                    alert("Message sent successfully!");
+                    document.getElementById("contact-form").reset();
+                }, function (err) {
+                    alert("Failed to send message");
+                });
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Download App</h3>
+                    <p>Get our mobile app for easy booking and real-time updates!</p>
+                    <a href="https://play.google.com/store/games?device=windows&pli=1" class="app-download-btn"
+                        target="_blank">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt="Get it on Google Play" style="width: 150px; height: auto;">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Let's-Go</h3>
+                    <p>Your trusted transportation partner in Sri Lanka. Experience safe, comfortable, and memorable
+                        journeys across the island.</p>
+                    <div class="social-links">
+                        <p style="font-size: 14px;"><a href="#" aria-label="Facebook">📘</a>Facebook</p>
+                        <p style="font-size: 14px;"><a href="#" aria-label="Facebook">💬</a>WhatsApp</p>
+                        <!-- <p style="font-size: 14px;"><a href="#" aria-label="Facebook">📷</a>Instagram</p>
+                        <p style="font-size: 14px;"><a href="#" aria-label="Facebook">🐦</a>Twitter</p> -->
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Popular Destination</a></li>
+                        <li><a href="#how-to-book">How to Book a Tour</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.letsgo.transport"
+                                target="_blank">Download App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Explore Popular Destinations</h3>
+                    <ul>
+                        <li>Safari Tours</li>
+                        <li>Beach Tours</li>
+                        <li>City Tours</li>
+                        <li>Nature Tours</li>
+                        <li>Culture Tours</li>
+                        <li>Adventure Tours</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><strong>Phone:</strong> +94 71 419 4776</p>
+                    <p><strong>Email:</strong> letsgonow2005@gmail.com</p>
+                    <p><strong>Address:</strong> Hambantota, Sri Lanka</p>
+                    <p><strong>Emergency:</strong> +94 71 419 4776</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Let's-Go. All rights reserved. | Designed with ❤️ for Sri Lanka</p>
+                <div class="footer-links">
+                    <a href="#privacy-policy">Privacy Policy</a> |
+                    <a href="#terms-conditions">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-policy" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 style="color: whitesmoke;">Privacy Policy</h2>
+                <a href="#" class="modal-close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <h3>1. Introduction</h3>
+                <p>Let's-Go ("we," "us," "our," or "Company") respects the privacy of our users ("user" or "you"). This
+                    Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit
+                    our website.</p>
+
+                <h3>2. Information We Collect</h3>
+                <p>We may collect information about you in a variety of ways. The information we may collect on our site
+                    includes:</p>
+                <ul>
+                    <li><strong>Personal Data:</strong> Name, email address, phone number, mailing address, and payment
+                        information</li>
+                    <li><strong>Device Information:</strong> Browser type, IP address, operating system, and device
+                        identifiers</li>
+                    <li><strong>Usage Data:</strong> Pages visited, time spent on pages, and links clicked</li>
+                    <li><strong>Location Data:</strong> GPS coordinates and location history for transportation services
+                    </li>
+                </ul>
+
+                <h3>3. Use of Your Information</h3>
+                <p>Having accurate information about you permits us to provide you with a smooth, efficient, and
+                    customized experience. Specifically, we may use information collected about you via our site to:</p>
+                <ul>
+                    <li>Process your transportation bookings and payments</li>
+                    <li>Send periodic emails regarding your bookings or services</li>
+                    <li>Improve our website and services</li>
+                    <li>Respond to your inquiries and customer support requests</li>
+                    <li>Generate analytics to improve user experience</li>
+                </ul>
+
+                <h3>4. Disclosure of Your Information</h3>
+                <p>We may share your information in the following situations:</p>
+                <ul>
+                    <li><strong>By Law or to Protect Rights:</strong> If required by law or to protect our rights</li>
+                    <li><strong>Third-Party Service Providers:</strong> We may share your information with vendors,
+                        consultants, and service providers who assist us</li>
+                    <li><strong>Business Transfers:</strong> Your information may be transferred as part of a merger or
+                        acquisition</li>
+                </ul>
+
+                <h3>5. Security of Your Information</h3>
+                <p>We use administrative, technical, and physical security measures to protect your personal
+                    information. However, no method of transmission over the Internet or electronic storage is 100%
+                    secure.</p>
+
+                <h3>6. Contact Us</h3>
+                <p>If you have questions or comments about this Privacy Policy, please contact us at:
+                    <strong>letsgonow2005@gmail.com</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div id="terms-conditions" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 style="color: whitesmoke;">Terms & Conditions</h2>
+                <a href="#" class="modal-close">&times;</a>
+            </div>
+            <div class="modal-body">
+                <h3>1. Agreement to Terms</h3>
+                <p>By accessing and using the Let's-Go website and services, you accept and agree to be bound by the
+                    terms and provision of this agreement. If you do not agree to abide by the above, please do not use
+                    this service.</p>
+
+                <h3>2. Use License</h3>
+                <p>Permission is granted to temporarily download one copy of the materials (information or software)
+                    from Let's-Go website for personal, non-commercial transitory viewing only. This is the grant of a
+                    license, not a transfer of title, and under this license:</p>
+                <ul>
+                    <li>You may not modify the materials</li>
+                    <li>You may not use the materials for any commercial purpose or for any public display</li>
+                    <li>You may not attempt to decompile or reverse engineer any software contained on the website</li>
+                    <li>You may not remove any copyright or proprietary notations from the materials</li>
+                </ul>
+
+                <h3>3. Booking and Cancellation Policy</h3>
+                <ul>
+                    <li>All bookings are subject to availability and confirmation by Let's-Go</li>
+                    <li>Cancellations made 24 hours prior to booking will receive a full refund</li>
+                    <li>Cancellations made less than 24 hours prior will be charged 50% of the booking amount</li>
+                    <li>No-shows will be charged 100% of the booking amount</li>
+                </ul>
+
+                <h3>4. Payment Terms</h3>
+                <p>All payments must be made through the approved payment methods provided on our website. We accept
+                    credit/debit cards, bank transfers, and digital payment platforms. Payment must be completed before
+                    service commencement.</p>
+
+                <h3>5. Limitation of Liability</h3>
+                <p>In no event shall Let's-Go, its officers, directors, and employees be held liable for any damages
+                    (including, without limitation, damages for loss of data or profit or due to business interruption)
+                    arising out of the use or inability to use Let's-Go website or services, even if we have been
+                    notified orally or in writing of the possibility of such damage.</p>
+
+                <h3>6. Accuracy of Materials</h3>
+                <p>The materials appearing on Let's-Go website could include technical, typographical, or photographic
+                    errors. Let's-Go does not warrant that any of the materials on the website are accurate, complete,
+                    or current. We reserve the right to make changes to the materials contained on the website at any
+                    time without notice.</p>
+
+                <h3>7. Disclaimer</h3>
+                <p>The materials on Let's-Go website are provided on an "as-is" basis. Let's-Go makes no warranties,
+                    expressed or implied, and hereby disclaims and negates all other warranties including, without
+                    limitation, implied warranties or conditions of merchantability, fitness for a particular purpose,
+                    or non-infringement of intellectual property or other violation of rights.</p>
+
+                <h3>8. Governing Law</h3>
+                <p>These terms and conditions are governed by and construed in accordance with the laws of Sri Lanka,
+                    and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+
+                <h3>9. Contact Information</h3>
+                <p>If you have any questions about these Terms & Conditions, please contact us at:
+                    <strong>letsgonow2005@gmail.com</strong> or call <strong>+94 71 419 4776</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
