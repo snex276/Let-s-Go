@@ -38,23 +38,30 @@
             <div class="logo">
                 <img src="assets/logo.png" alt="Let's-Go Logo">
             </div>
-            <nav>
-                <ul>
+            <nav aria-label="Primary navigation">
+                <button class="mobile-nav-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false"
+                    aria-label="Open navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul id="mobile-menu">
                     <li><a href="index.html">Home</a></li>
                     <li class="dropdown-menu">
-                        <a href="#" id="TransportServicesBtn">Transfers ▼</a>
-
+                        <a href="#" id="TransportServicesBtn" class="submenu-toggle" aria-haspopup="true"
+                            aria-expanded="false" aria-controls="TransportSDropdown">Transfers ▼</a>
                         <ul class="dropdown" id="TransportSDropdown">
                             <li><a href="cruise-port-transfer-sri-lanka.html">Cruise Port Transfer</a></li>
                             <li><a href="airport-transfer-sri-lanka.html">Airport Transfer</a></li>
                         </ul>
                     </li>
                     <li class="dropdown-menu">
-                        <a href="#" id="ToursServicesBtn">Tours ▼</a>
-
+                        <a href="#" id="ToursServicesBtn" class="submenu-toggle" aria-haspopup="true"
+                            aria-expanded="false" aria-controls="ToursSDropdown">Tours ▼</a>
                         <ul class="dropdown" id="ToursSDropdown">
                             <li><a href="sri-lanka-custom-tours.html" class="special-tour">Custom Tour</a></li>
-                            <li><a href="private-driver-in-sri-lanka.html" class="special-tour">Private Driver Tour</a></li>
+                            <li><a href="private-driver-in-sri-lanka.html" class="special-tour">Private Driver Tour</a>
+                            </li>
                             <li><a href="sri-lanka-safari-tours.html">Safari Tour</a></li>
                             <li><a href="sri-lanka-beach-tours.html">Beach Tour</a></li>
                             <li><a href="sri-lanka-city-tours.html">City Tour</a></li>
@@ -88,18 +95,25 @@
                         Book Now on WhatsApp
                     </a>
                 </div>
-                <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.25rem; margin-top:2.5rem;">
-                    <div style="background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:1.5rem;">
+                <div
+                    style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.25rem; margin-top:2.5rem;">
+                    <div
+                        style="background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:1.5rem;">
                         <h3 style="color:#11ff00; margin-bottom:0.75rem;">Sacred Pilgrimage</h3>
-                        <p style="color:#f4f4f4; line-height:1.7;">Climb 5,500 steps to the sacred footprint revered by Buddhists, Hindus, Muslims and Christians alike.</p>
+                        <p style="color:#f4f4f4; line-height:1.7;">Climb 5,500 steps to the sacred footprint revered by
+                            Buddhists, Hindus, Muslims and Christians alike.</p>
                     </div>
-                    <div style="background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:1.5rem;">
+                    <div
+                        style="background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:1.5rem;">
                         <h3 style="color:#11ff00; margin-bottom:0.75rem;">Sunrise & Shadow Phenomenon</h3>
-                        <p style="color:#f4f4f4; line-height:1.7;">Watch the sun rise over the highlands and see the mountain's famous triangular shadow appear on the clouds.</p>
+                        <p style="color:#f4f4f4; line-height:1.7;">Watch the sun rise over the highlands and see the
+                            mountain's famous triangular shadow appear on the clouds.</p>
                     </div>
-                    <div style="background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:1.5rem;">
+                    <div
+                        style="background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:1.5rem;">
                         <h3 style="color:#11ff00; margin-bottom:0.75rem;">Easy Transport</h3>
-                        <p style="color:#f4f4f4; line-height:1.7;">Reach Nallathanniya or Dalhousie comfortably with a private vehicle and trusted driver.</p>
+                        <p style="color:#f4f4f4; line-height:1.7;">Reach Nallathanniya or Dalhousie comfortably with a
+                            private vehicle and trusted driver.</p>
                     </div>
                 </div>
             </div>
@@ -116,19 +130,23 @@
                 <div class="service-grid">
                     <div class="service-item">
                         <h3>About Adam's Peak</h3>
-                        <p>Adam's Peak, also known as Sri Pada, is a 2,243-meter sacred mountain in the central highlands, home to a rock formation revered as a sacred footprint by four major faiths.</p>
+                        <p>Adam's Peak, also known as Sri Pada, is a 2,243-meter sacred mountain in the central
+                            highlands, home to a rock formation revered as a sacred footprint by four major faiths.</p>
                     </div>
                     <div class="service-item">
                         <h3>Why Visit</h3>
-                        <p>Travelers climb Adam's Peak for its spiritual significance, the challenge of the 5,500-step ascent, and the reward of a breathtaking sunrise from the summit.</p>
+                        <p>Travelers climb Adam's Peak for its spiritual significance, the challenge of the 5,500-step
+                            ascent, and the reward of a breathtaking sunrise from the summit.</p>
                     </div>
                     <div class="service-item">
                         <h3>Top Places to Visit</h3>
-                        <p>Pass the Japanese peace pagoda partway up the trail, ring the summit bell on arrival, and take in panoramic views over the tea-covered highlands.</p>
+                        <p>Pass the Japanese peace pagoda partway up the trail, ring the summit bell on arrival, and
+                            take in panoramic views over the tea-covered highlands.</p>
                     </div>
                     <div class="service-item">
                         <h3>Activities & Experiences</h3>
-                        <p>Experience an overnight pilgrimage-style hike, sunrise viewing, the mountain's shadow phenomenon, and tea stops with fellow climbers along the illuminated trail.</p>
+                        <p>Experience an overnight pilgrimage-style hike, sunrise viewing, the mountain's shadow
+                            phenomenon, and tea stops with fellow climbers along the illuminated trail.</p>
                     </div>
                 </div>
             </div>
@@ -137,23 +155,32 @@
         <section class="about">
             <div class="container">
                 <h2>Why Choose LetsGo for Your Adam's Peak Tour</h2>
-                <p>Enjoy a flexible and comfortable private tour to one of Sri Lanka's most iconic and spiritual climbs.</p>
-                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; margin-top:2rem;">
-                    <div style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+                <p>Enjoy a flexible and comfortable private tour to one of Sri Lanka's most iconic and spiritual climbs.
+                </p>
+                <div
+                    style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; margin-top:2rem;">
+                    <div
+                        style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
                         <h3 style="color:#087d00;">Comfortable Vehicles</h3>
-                        <p>Travel smoothly through the tea plantation roads to Nallathanniya in a private vehicle designed for comfort.</p>
+                        <p>Travel smoothly through the tea plantation roads to Nallathanniya in a private vehicle
+                            designed for comfort.</p>
                     </div>
-                    <div style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+                    <div
+                        style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
                         <h3 style="color:#087d00;">Experienced Drivers</h3>
                         <p>Our drivers know the best departure times to time your climb perfectly with sunrise.</p>
                     </div>
-                    <div style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+                    <div
+                        style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
                         <h3 style="color:#087d00;">Flexible Itineraries</h3>
-                        <p>We can plan your overnight climb around the pilgrimage season or arrange an off-season ascent to suit your schedule.</p>
+                        <p>We can plan your overnight climb around the pilgrimage season or arrange an off-season ascent
+                            to suit your schedule.</p>
                     </div>
-                    <div style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+                    <div
+                        style="background:white; padding:1.75rem; border-radius:10px; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
                         <h3 style="color:#087d00;">Safe Travel Experience</h3>
-                        <p>Enjoy reliable pickup, punctual overnight departures, and a secure journey to and from the trailhead.</p>
+                        <p>Enjoy reliable pickup, punctual overnight departures, and a secure journey to and from the
+                            trailhead.</p>
                     </div>
                 </div>
             </div>
@@ -165,19 +192,23 @@
                 <div class="service-grid">
                     <div class="service-item">
                         <h3>Duration</h3>
-                        <p>The ascent typically takes 3-5 hours depending on fitness and crowd levels, with a faster 1.5-2 hour descent.</p>
+                        <p>The ascent typically takes 3-5 hours depending on fitness and crowd levels, with a faster
+                            1.5-2 hour descent.</p>
                     </div>
                     <div class="service-item">
                         <h3>Pickup Locations</h3>
-                        <p>We arrange pickup from Hatton, Nallathanniya, Dalhousie, Maskeliya and nearby hotels with flexible overnight timing.</p>
+                        <p>We arrange pickup from Hatton, Nallathanniya, Dalhousie, Maskeliya and nearby hotels with
+                            flexible overnight timing.</p>
                     </div>
                     <div class="service-item">
                         <h3>Best Time to Visit</h3>
-                        <p>The pilgrimage season runs from December to May, when the trail is lit and fully serviced. Off-season climbs from June to November are quieter but less equipped.</p>
+                        <p>The pilgrimage season runs from December to May, when the trail is lit and fully serviced.
+                            Off-season climbs from June to November are quieter but less equipped.</p>
                     </div>
                     <div class="service-item">
                         <h3>Comfortable Transport</h3>
-                        <p>Enjoy smooth travel in a private vehicle with reliable service from LetsGo for your overnight pilgrimage trip.</p>
+                        <p>Enjoy smooth travel in a private vehicle with reliable service from LetsGo for your overnight
+                            pilgrimage trip.</p>
                     </div>
                 </div>
             </div>
@@ -189,11 +220,13 @@
                 <div class="service-grid">
                     <div class="service-item">
                         <h3>What time should I start climbing?</h3>
-                        <p>Most climbers start between 1:00 AM and 2:30 AM to reach the summit before the roughly 6:00 AM sunrise, earlier on weekends and full moon days.</p>
+                        <p>Most climbers start between 1:00 AM and 2:30 AM to reach the summit before the roughly 6:00
+                            AM sunrise, earlier on weekends and full moon days.</p>
                     </div>
                     <div class="service-item">
                         <h3>How difficult is the Adam's Peak hike?</h3>
-                        <p>It involves around 5,500 steps and moderate fitness, but is achievable for most ages with steady pacing and rest stops along the way.</p>
+                        <p>It involves around 5,500 steps and moderate fitness, but is achievable for most ages with
+                            steady pacing and rest stops along the way.</p>
                     </div>
                     <div class="service-item">
                         <h3>Is there an entrance fee?</h3>
@@ -201,7 +234,8 @@
                     </div>
                     <div class="service-item">
                         <h3>How can I book an Adam's Peak Tour?</h3>
-                        <p>You can book directly through WhatsApp, the mobile app, or by contacting LetsGo through the website.</p>
+                        <p>You can book directly through WhatsApp, the mobile app, or by contacting LetsGo through the
+                            website.</p>
                     </div>
                 </div>
             </div>
@@ -213,18 +247,22 @@
                 <div class="service-grid">
                     <div class="service-item">
                         <h3>Kitulgala Tour</h3>
-                        <p>Experience white water rafting and rainforest adventure on the Kelani River near Kitulgala.</p>
+                        <p>Experience white water rafting and rainforest adventure on the Kelani River near Kitulgala.
+                        </p>
                         <a href="kitulgala-tour-sri-lanka.html" class="btn" style="margin-top:1rem;">Explore Tour</a>
                     </div>
                     <div class="service-item">
                         <h3>Ravana Falls</h3>
-                        <p>Discover the legendary Ravana Falls, a scenic cascade steeped in local folklore near Ella.</p>
+                        <p>Discover the legendary Ravana Falls, a scenic cascade steeped in local folklore near Ella.
+                        </p>
                         <a href="ravana-falls-tour-sri-lanka.html" class="btn" style="margin-top:1rem;">View Tour</a>
                     </div>
                     <div class="service-item">
                         <h3>Diyaluma Falls</h3>
-                        <p>Discover one of Sri Lanka's tallest waterfalls, complete with natural infinity pools and hiking trails.</p>
-                        <a href="diyaluma-falls-tour-sri-lanka.html" class="btn" style="margin-top:1rem;">Plan Your Trip</a>
+                        <p>Discover one of Sri Lanka's tallest waterfalls, complete with natural infinity pools and
+                            hiking trails.</p>
+                        <a href="diyaluma-falls-tour-sri-lanka.html" class="btn" style="margin-top:1rem;">Plan Your
+                            Trip</a>
                     </div>
                     <div class="service-item">
                         <h3>Nature Tours</h3>
@@ -238,9 +276,11 @@
         <section style="background:#087d00;color:white;padding:80px 0;text-align:center;">
             <div class="container">
                 <h2 style="color:white;">Book Your Adam's Peak Tour</h2>
-                <p>Reserve a comfortable overnight pilgrimage experience with LetsGo and witness Sri Pada's legendary sunrise.</p>
+                <p>Reserve a comfortable overnight pilgrimage experience with LetsGo and witness Sri Pada's legendary
+                    sunrise.</p>
                 <div style="margin-top:1.5rem; display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
-                    <a href="https://play.google.com/store/apps/details?id=com.DEVRIX.lets_go" class="btn" target="_blank">Book via Mobile App</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.DEVRIX.lets_go" class="btn"
+                        target="_blank">Book via Mobile App</a>
                     <a href="index.html#contact" class="btn" style="background:white;color:#087d00;">Book on Website</a>
                 </div>
                 <div style="margin-top:1.5rem;">
@@ -258,18 +298,23 @@
                 <div class="footer-section">
                     <h3>Download App</h3>
                     <p>Get our mobile app for easy booking and real-time updates!</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.DEVRIX.lets_go" class="app-download-btn" target="_blank">
-                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="width: 150px; height: auto;">
+                    <a href="https://play.google.com/store/apps/details?id=com.DEVRIX.lets_go" class="app-download-btn"
+                        target="_blank">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt="Get it on Google Play" style="width: 150px; height: auto;">
                     </a>
                 </div>
             </div>
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Let's-Go</h3>
-                    <p>Safe, comfortable transportation and memorable day tours across Sri Lanka.</p>
+                    <p>Your trusted transportation partner in Sri Lanka. Experience safe, comfortable, and memorable
+                        journeys across the island.</p>
                     <div class="social-links">
                         <p style="font-size: 14px;"><a href="#" aria-label="Facebook">📘</a>Facebook</p>
-                        <p style="font-size: 14px;"><a href="#" aria-label="WhatsApp">💬</a>WhatsApp</p>
+                        <p style="font-size: 14px;"><a href="#" aria-label="Facebook">💬</a>WhatsApp</p>
+                        <!-- <p style="font-size: 14px;"><a href="#" aria-label="Facebook">📷</a>Instagram</p>
+                        <p style="font-size: 14px;"><a href="#" aria-label="Facebook">🐦</a>Twitter</p> -->
                     </div>
                 </div>
                 <div class="footer-section">
@@ -280,7 +325,8 @@
                         <li><a href="index.html#how-to-book">How to Book a Tour</a></li>
                         <li><a href="index.html#about">About</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
-                        <li><a href="https://play.google.com/store/apps/details?id=com.DEVRIX.lets_go" target="_blank">Download App</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.DEVRIX.lets_go"
+                                target="_blank">Download App</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -296,10 +342,10 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p><strong>Phone:</strong> +94 71 438 2098</p>
+                    <p><strong>Phone:</strong> +94 75 111 5220</p>
                     <p><strong>Email:</strong> letsgonow2005@gmail.com</p>
-                    <p><strong>Address:</strong> Nallathanniya, Sri Lanka</p>
-                    <p><strong>Emergency:</strong> +94 71 438 2098</p>
+                    <p><strong>Address:</strong> Hambantota, Sri Lanka</p>
+                    <p><strong>Emergency:</strong> +94 75 111 5220</p>
                 </div>
             </div>
             <div class="footer-bottom">
