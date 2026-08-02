@@ -18,7 +18,7 @@ function scanFolder(folder) {
                 scanFolder(fullPath);
             }
 
-        } else if (file.endsWith(".html")) {
+        } else if (file.endsWith(".html") && file !== "navbar.html") {
 
             let urlPath = fullPath
                 .replace(__dirname, "")
